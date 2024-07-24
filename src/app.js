@@ -22,7 +22,7 @@ app.use(express.json());
 const clientes = [
     {id:"1", nombre: "Jorge", Apellido:"Cafrune"},
     {id:"2", nombre: "Roberto", Apellido:"Leto"},
-    {id:"3", nombre: "Edivaldo", Apellido:"Pininho Soares"}
+    {id:"3", nombre: "Edivaldo", Apellido:"Solangas"}
 ];
 
 // Metodo GET: Permite obtener recursos
@@ -82,7 +82,6 @@ app.put("/clientes/:id",(req,res)=>{
         clientes[clienteIndex].nombre = nombre;
         clientes[clienteIndex].Apellido = Apellido;
         console.log(clientes);
-        console.log('deja e jode con la publicida')
 
         res.send('Cliente actualizado');
     } else {
